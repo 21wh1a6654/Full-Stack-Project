@@ -1,0 +1,35 @@
+.search-results {
+    position: fixed;
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 20px;
+    z-index: 1000;
+    max-width: 100px; /* Limit maximum width */
+    overflow-y: auto; /* Enable scrolling if content exceeds max-height */
+    max-height: 80%; /* Limit maximum height */
+  }
+  
+  .search-results.modal-open {
+    display: block; /* Display when modal is open */
+  }
+  
+  .product-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .product-image {
+    width: 60px; /* Adjusted size for smaller images */
+    height: 60px;
+    object-fit: cover;
+    margin-right: 10px;
+  }
+  
+  .product-title {
+    font-size: 16px;
+  }
+  
