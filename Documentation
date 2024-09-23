@@ -1,0 +1,97 @@
+Auction Galaxy: Auction Application MERN Documentation
+
+Table  of Contents
+1. Introduction
+2. Project Structure
+3. Client Side
+- Setup
+- Available Scripts
+4. Server Side
+   	- Setup
+   	- API Endpoints
+
+5. Database Schema
+
+6. Features
+   	- Seller Features
+   	- User Features
+   	- Admin Features
+
+7. Deployment
+
+8. Contributing
+
+
+
+Introduction
+Welcome to Auction Galaxy, an innovative auction application that revolutionizes the way sellers connect with potential buyers. Our user-friendly platform provides sellers with the opportunity to list a wide range of products for auction, while users can seamlessly place bids based on their interests and preferences.
+
+At Auction Galaxy, we prioritize efficiency and transparency in the auction process. Sellers can easily create auctions, including detailed product descriptions, s, and starting bid prices. Users can review the available auctions, assess the products, and place bids accordingly. Our intuitive interface ensures a smooth bsing and bidding experience for users, making it convenient to participate in multiple auctions simultaneously.
+Project Structure
+Auction-App/
+├── client/
+│   ├── public/
+│   ├── src/
+│   ├── README.md
+│   ├── package-lock.json
+│   └── package.json
+├── server/
+│   ├── index.js
+│   ├── Schema.js
+│   ├── package-lock.json
+│   └── package.json
+└── README.md
+Client Side
+The client side of the application is built using React.
+Setup:
+Navigate to the client directory:      "cd client"
+Install the dependencies:     "npm install"
+Start the development server:    "npm start"
+Available Scripts:
+In the client directory, you can run:
+- npm start: Runs the app in development mode.
+- npm test: Launches the test runner in interactive watch mode.
+- npm run build: Builds the app for production to the build folder.
+- npm run eject: Ejects the create-react-app configuration.
+Server Side:
+The server side of the application is built using Node.js and Express.
+Setup:
+-Navigate to the server directory:  "cd server"
+-Install the dependencies:  "npm install"
+-Start the server: "node index.js"
+API Endpoints
+- GET /auctions: Retrieve all auctions.
+- POST /auction: Create a new auction.
+- POST /bid: Place a bid on an auction.
+- GET /auction/:id: Retrieve a specific auction by ID.
+
+Database Schema
+The database schema is defined in Schema.js. This file includes the definitions for the various entities involved in the auction process, such as Users, Auctions, and Bids.
+
+Features
+Seller Features:
+- Create auctions with detailed product descriptions, s, and starting bid prices.
+- Track bid activity and communicate with interested users.
+- Set reserve prices to ensure a minimum accep bid.
+User Features:
+- Bse available auctions and review product details.
+- Place bids within their budget.
+- Receive real-time updates and notifications about auction progress.
+
+Admin Features:
+- Ensure the integrity and security of every auction.
+- Monitor the platform for reliability and fairness.
+- Facilitate communication between sellers and users.
+Deployment
+-To deploy the application, follow these steps:
+-Build the client side:
+cd client
+npm run build
+-Deploy the server along with the built client.
+
+Contributing
+We welcome contributions to Auction Galaxy! Please follow these guidelines:
+1. Fork the repository.
+2. Create a new branch for your feature or bug fix.
+3. Commit your changes and push to your branch.
+4. Create a pull request with a detailed description of your changes.
